@@ -1,0 +1,38 @@
+.socialIconsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.iconLink {
+    margin: 10px;
+    display: block;
+}
+
+.icon {
+    font-size: 2em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon .facebook {
+    color: #3b5998;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.icon:hover .instagram {
+    color: #bc2a8d;
+}
+
+.icon:hover .youtube {
+    color: #c4302b;
+}
+
+.icon:hover .facebook {
+    color: #3b5998;
+}
+
+.icon:hover .tiktok {
+    color: #69c9d0;
+}
