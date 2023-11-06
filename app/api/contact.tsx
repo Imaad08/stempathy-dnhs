@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 const transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
@@ -10,7 +11,12 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+    if (req.method !== 'POST') {
+        res.status(405).end(); 
+        return;
+    }
+
     const { name, email, message } = req.body;
 
     const mailOptions = {

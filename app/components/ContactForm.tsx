@@ -1,12 +1,12 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState, FormEvent } from 'react';
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
         const formData = {

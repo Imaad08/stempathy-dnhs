@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import ContactForm from '../components/ContactForm'
+// import ContactForm from '../components/ContactForm'
 import SocialIcons from '../components/SocialIcons'
 import Footer from '../components/Footer'
+import ContactUs from '../components/ContactUs'
 
 const page = () => {
     return (
@@ -15,7 +16,7 @@ const page = () => {
             <br>
             </br>
             <p className='flex flex-col justify-center items-center text-xl font-serif max-w-6xl mx-auto'>If you have opportunities for the team let us know through an email, we're always available to the advancement of equitable STEM education. </p>
-            <ContactForm />
+            {/* <ContactUs /> */}
             <br>
             </br>
             <ul className='flex flex-col justify-center items-center font-serif text-2xl italic'>

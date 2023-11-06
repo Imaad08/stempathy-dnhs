@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
 
-const BlogList = ({ imageSrc, description, link }) => {
+interface BlogListProps {
+    imageSrc: string;
+    description: string;
+    link: string;
+}
+
+const BlogList: React.FC<BlogListProps> = ({ imageSrc, description, link }) => {
     return (
         <div className="bg-white p-4 shadow-md rounded-lg mb-4">
             <img src={imageSrc} alt={description} className="w-full h-auto rounded-md" />

@@ -3,8 +3,12 @@ import React, { useState } from 'react';
 import { BsChevronCompactLeft as LeftArrowIcon, BsChevronCompactRight as RightArrowIcon } from 'react-icons/bs';
 import { RxDotFilled as DotIcon } from 'react-icons/rx';
 
-const UpdatedSliderComponent = () => {
-    const updatedSlides = [
+interface Slide {
+    imageURL: string;
+}
+
+const UpdatedSliderComponent: React.FC = () => {
+    const updatedSlides: Slide[] = [
         {
             imageURL: 'https://i.ibb.co/XDNffPB/pexels-binyamin-mellish-186077-1.jpg',
         },
@@ -22,7 +26,7 @@ const UpdatedSliderComponent = () => {
         },
     ];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     const goToPrevSlide = () => {
         const isFirstSlide = currentIndex === 0;
@@ -36,7 +40,7 @@ const UpdatedSliderComponent = () => {
         setCurrentIndex(newIndex);
     };
 
-    const goToSlide = (slideIndex) => {
+    const goToSlide = (slideIndex: number) => {
         setCurrentIndex(slideIndex);
     };
 
