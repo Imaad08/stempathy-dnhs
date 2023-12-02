@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import BlogList from '../components/BlogList';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import BlogList from '@/components/BlogList';
 
 const cardsData = [
     {

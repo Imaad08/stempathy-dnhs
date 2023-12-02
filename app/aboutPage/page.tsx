@@ -1,8 +1,7 @@
-import Navbar from '../components/Navbar';
-import '../globals.css';
+import Navbar from '@/components/Navbar';
 import Image from 'next/image';
-import ImageSlider from '../components/ImageSlider';
-import Footer from '../components/Footer'
+import ImageSlider from '@/components/ImageSlider';
+import Footer from '@/components/Footer'
 
 
 const aboutPage = () => {

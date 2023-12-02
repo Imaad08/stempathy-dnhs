@@ -4,6 +4,7 @@ import './globals.css';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 import Card from '@/components/Card';
+import Contact from '@/components/contact'
 
 const App = () => {
   const imageUrl = 'https://static.wixstatic.com/media/1df416_717fad7f2a0e4fd1a623e7a5c8d6fb45~mv2.png/v1/fill/w_679,h_521,al_c,lg_1,q_85,enc_auto/Screenshot%202023-09-18%20215025.png';
@@ -57,6 +58,10 @@ const App = () => {
             />
           ))}
         </div>
+      </section>
+      <section className="w-screen h-screen">
+        <Contact />
+        
       </section>
       <div className='w-screen h-40 bg-gray-200'>
       </div>

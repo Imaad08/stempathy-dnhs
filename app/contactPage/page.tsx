@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '@/components/Navbar'
 // import ContactForm from '../components/ContactForm'
-import SocialIcons from '../components/SocialIcons'
-import Footer from '../components/Footer'
-import ContactUs from '../components/ContactUs'
+import SocialIcons from '@/components/SocialIcons'
+import Footer from '@/components/Footer'
+import ContactUs from '@/components/ContactUs'
 
 const page = () => {
     return (
